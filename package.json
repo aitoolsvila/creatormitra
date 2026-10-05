@@ -1,0 +1,37 @@
+{
+  "name": "creator-mitra",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --hostname 0.0.0.0",
+    "build": "next build --webpack",
+    "start": "next start --hostname 0.0.0.0",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "test": "playwright test",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "test:production": "npm run build && CREATOR_MITRA_TEST_MODE=production playwright test",
+    "build:pages": "CREATOR_MITRA_STATIC_EXPORT=1 NEXT_PUBLIC_BASE_PATH=/creatormitra NEXT_PUBLIC_SITE_URL=https://aitoolsvila.github.io/creatormitra next build --webpack",
+    "preview:pages": "node scripts/serve-static.mjs",
+    "test:pages": "npm run build:pages && CREATOR_MITRA_TEST_MODE=pages CREATOR_MITRA_TEST_BASE_PATH=/creatormitra playwright test"
+  },
+  "dependencies": {
+    "@fontsource/manrope": "^5.3.0",
+    "lucide-react": "^0.577.0",
+    "next": "16.3.8",
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.13.0",
+    "@playwright/test": "^1.58.2",
+    "@types/node": "^24.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "eslint": "^9.39.0",
+    "eslint-config-next": "16.3.8",
+    "prettier": "^3.9.9",
+    "typescript": "^5.9.3"
+  }
+}
