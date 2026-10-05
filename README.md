@@ -86,6 +86,8 @@ npm run preview:pages
 npm run test:pages
 ```
 
-The exported website is in `.next-export/`. The GitHub Actions workflow in `.github/workflows/pages.yml` builds and publishes it on pushes to `main` and manual runs. Enable GitHub Pages in the repository settings with **Source: GitHub Actions**, then run **Publish Creator Mitra preview** from Actions. A live URL is established only after that deployment succeeds; making a repository public alone does not publish a website.
+The exported website is in `.next-export/`. A tested copy is also uploaded to the `gh-pages` branch. To activate that preview, open the repository's **Settings → Pages**, select **Deploy from a branch**, choose **gh-pages** and **/ (root)**, then save. GitHub builds and publishes the website after this setting is enabled. The `.nojekyll` file preserves Next.js's `_next` assets.
+
+For future deployment through GitHub Actions, change the Pages source to **GitHub Actions**, then manually run **Publish Creator Mitra preview** from Actions. The workflow in `.github/workflows/pages.yml` builds and publishes the current source. A live URL is established only after a deployment succeeds; making a repository public alone does not publish a website.
 
 The intended project URL is `https://aitoolsvila.github.io/creatormitra/`. This is a demo website with local browser storage; it remains unsuitable for real payments, authenticated accounts, or delivery of contact forms without connecting production services.
