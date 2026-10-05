@@ -1,0 +1,3 @@
+:HL["/creatormitra/_next/static/css/18c1ae26981b00d6.css","style"]
+:HL["/creatormitra/_next/static/css/182e93981ec59535.css","style"]
+0:{"tree":{"name":"","param":null,"prefetchHints":4176,"slots":{"children":{"name":"case-studies","param":null,"prefetchHints":4192,"slots":{"children":{"name":"slug","param":{"type":"d","key":"a-taste-of-home","siblings":[]},"prefetchHints":4192,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}}}}}},"staleTime":300,"buildId":"a2M37tzWzD6dxU0tXHuLa"}

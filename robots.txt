@@ -1,0 +1,8 @@
+User-Agent: *
+Allow: /
+Disallow: /dashboard
+Disallow: /login
+Disallow: /start-campaign
+Disallow: /creator-signup
+
+Sitemap: https://aitoolsvila.github.io/creatormitra/sitemap.xml
